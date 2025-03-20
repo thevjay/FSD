@@ -13,3 +13,8 @@ npm i jest -D
     - e2e Test cases
     - Tools - Puppeteer, Cypress, Selenium
     - - npm i puppeteer
+
+- A/B Testing :
+    - Split Testing
+    - Bucket Testing - variation 
+    - 
