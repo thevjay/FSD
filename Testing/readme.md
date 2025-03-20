@@ -13,8 +13,12 @@ npm i jest -D
     - e2e Test cases
     - Tools - Puppeteer, Cypress, Selenium
     - - npm i puppeteer
-
 - A/B Testing :
     - Split Testing
     - Bucket Testing - variation 
-    - 
+- Peformance testing:
+    - Lighthouse
+- Test Driven Development
+    - Red - Green - Refactor
+
+# npm run test -- --watchAll
