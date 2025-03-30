@@ -22,3 +22,6 @@ npm i jest -D
     - Red - Green - Refactor
 
 # npm run test -- --watchAll
+
+- security testing
+- - tool BurpSuite
