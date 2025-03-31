@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Accordion from './comp/Accordion';
 import Comments from './comp/comments/Comments';
 import ImageSlider from './comp/image-slider/ImageSlider';
+import Pagination from './comp/pagination/Pagination';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <a href='/accordion' className='mx-4'>Accordion</a>
           <a href='/comments' className='mx-4'>Comments</a>
           <a href='/image-slider' className='mx-4'>Image Slider</a>
+          <a href='/pagination' className='mx-4'>Pagination</a>
           <a href='/login'>Login</a>
         </nav>
         <select className='text-black'  value={lang} onChange={(e)=> setLang(e.target.value)}>
@@ -52,6 +54,7 @@ function App() {
           <Route path='/accordion' element={<Accordion/>} />
           <Route path='/comments' element={<Comments/>} />
           <Route path='/image-slider' element={<ImageSlider/>} />
+          <Route path='/pagination' element={<Pagination/>} />
           <Route path='/login' element={<Login/>} />
         </Routes>
       </BrowserRouter>
