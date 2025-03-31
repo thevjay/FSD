@@ -6,6 +6,9 @@ import Team from './comp/Team';
 import Login from './comp/Login';
 import ProtectedRoute from './comp/ProtectedRoute';
 import { useState } from 'react';
+import Accordion from './comp/Accordion';
+import Comments from './comp/comments/Comments';
+import ImageSlider from './comp/image-slider/ImageSlider';
 
 function App() {
 
@@ -19,10 +22,13 @@ function App() {
     <div className="App">
       <header className='text-2xl font-bold py-5 px-5 bg-black text-white text-center flex items-center justify-between'>
         Hello World
-        <nav className='p-2 m-2 w-96 text-lg'>
+        <nav className='p-2 m-2 w-150 text-lg'>
           <a href='/' className='mx-4'>Home</a>
           <a href='/about' className='mx-4'>About</a>
           <a href='/team' className='mx-4'>Team</a>
+          <a href='/accordion' className='mx-4'>Accordion</a>
+          <a href='/comments' className='mx-4'>Comments</a>
+          <a href='/image-slider' className='mx-4'>Image Slider</a>
           <a href='/login'>Login</a>
         </nav>
         <select className='text-black'  value={lang} onChange={(e)=> setLang(e.target.value)}>
@@ -43,6 +49,9 @@ function App() {
           </Route>
           
           <Route path='/team' element={<Team/>} />
+          <Route path='/accordion' element={<Accordion/>} />
+          <Route path='/comments' element={<Comments/>} />
+          <Route path='/image-slider' element={<ImageSlider/>} />
           <Route path='/login' element={<Login/>} />
         </Routes>
       </BrowserRouter>

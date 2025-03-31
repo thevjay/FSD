@@ -67,3 +67,10 @@ when adding new featurs in older version is not breaks it means the existing cod
 - - firstly we wirte test cases and after we write the actual code
 - # Much More....
 
+# Pagination
+- https://dummyjson.com/products?limit=20&skip=50&select=title,price
+
+- # Offset Pagination Issue:
+- page 1      page 2     page 3
+- x,y,z,d     j k w z    k l n o
+# Cursor Pagination:
