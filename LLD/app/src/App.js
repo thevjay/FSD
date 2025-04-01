@@ -10,6 +10,7 @@ import Accordion from './comp/Accordion';
 import Comments from './comp/comments/Comments';
 import ImageSlider from './comp/image-slider/ImageSlider';
 import Pagination from './comp/pagination/Pagination';
+import SearchUI from './comp/search-ui/SearchUI';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <a href='/comments' className='mx-4'>Comments</a>
           <a href='/image-slider' className='mx-4'>Image Slider</a>
           <a href='/pagination' className='mx-4'>Pagination</a>
+          <a href='/search-ui' className='mx-4'>Search</a>
           <a href='/login'>Login</a>
         </nav>
         <select className='text-black'  value={lang} onChange={(e)=> setLang(e.target.value)}>
@@ -55,6 +57,7 @@ function App() {
           <Route path='/comments' element={<Comments/>} />
           <Route path='/image-slider' element={<ImageSlider/>} />
           <Route path='/pagination' element={<Pagination/>} />
+          <Route path='/search-ui' element={<SearchUI/>} />
           <Route path='/login' element={<Login/>} />
         </Routes>
       </BrowserRouter>
