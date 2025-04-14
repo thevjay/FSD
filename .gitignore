@@ -3,3 +3,4 @@ LLD/app/node_modules
 
 Networking/graphql/node_modules
 Networking/gRPC/node_modules
+Networking/RestApi/node_modules
