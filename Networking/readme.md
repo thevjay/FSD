@@ -34,5 +34,9 @@
     list of books with author details
     list of author with book details
 
+ - Client (React)
+  - Apollo Client 
+   - useQuery
+
 # gRPC
   

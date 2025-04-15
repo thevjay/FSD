@@ -4,3 +4,12 @@ LLD/app/node_modules
 Networking/graphql/node_modules
 Networking/gRPC/node_modules
 Networking/RestApi/node_modules
+
+communication/shortpolling/node_modules
+communication/longpolling/node_modules
+communication/websocket/node_modules
+communication/sse/node_modules
+communication/webhooks/node_modules
+
+security/xss/mitigation/node_modules
+security/iframeProtection/node_modules

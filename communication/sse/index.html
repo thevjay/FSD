@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSE Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #sse-data {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        #sse-data p {
+            background-color: #e8f0fe;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Server-Sent Events Example</h1>
+    <div id="sse-data"></div>
+
+    <script>
+        // Setup the sse connection
+        const eventSource = new EventSource('/sse');
+
+        eventSource.onmessage = (event) => {
+            console.log(event)
+            const sseDataRef = document.getElementById('sse-data');
+            sseDataRef.innerHTML += `<p>${event.data}</p>`
+        }
+    </script>
+</body>
+</html>
