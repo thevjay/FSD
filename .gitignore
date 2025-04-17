@@ -17,3 +17,5 @@ security/securityheaders/node_modules
 security/permissions-policy/node_modules
 security/cors/server/node_modules
 security/csrf/mitigation/node_modules
+
+databasecaching/cookie/node_modules
