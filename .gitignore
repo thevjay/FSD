@@ -13,3 +13,7 @@ communication/webhooks/node_modules
 
 security/xss/mitigation/node_modules
 security/iframeProtection/node_modules
+security/securityheaders/node_modules
+security/permissions-policy/node_modules
+security/cors/server/node_modules
+security/csrf/mitigation/node_modules
